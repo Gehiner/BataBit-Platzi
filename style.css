@@ -24,8 +24,7 @@
 }
 
 html{
-    font-family: 'DM Sans', sans-serif;
-    /*font-family: 'Inter', sans-serif;*/ 
+    font-family: 'DM Sans', sans-serif; 
     font-size: 62.5%;  
 }
 header{
@@ -116,4 +115,72 @@ main{
      max-width: 900px;
      margin: 0 auto;
  }
+
+.main-exchange-container .backgroundImg{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background-image: url("./assets/img/bitcoin.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-exchange-container h2{
+    margin-bottom: 30px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+
+.main-exchange-container p{
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color:#757575;
+}
+.main-tables-container{
+    width: 100%;
+}
+.main-tables-container .main-tables-container--table{
+    display: grid;
+    grid-template-columns: 105px 105px;
+    place-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 1px;
+    font-family: 'Inter', sans-serif;
+}
+
+.main-tables-container .main-tables-container--table div{
+    display: flex;
+    background-color: var(--just-white);
+    justify-content: start;
+    height: 40px;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.main-tables-container .main-tables-container--table .main-tables-container--contend{
+    justify-content: space-between;
+}
+
+.main-tables-container .main-tables-container--table div span{
+    color: #B5B0AC;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.main-tables-container .main-tables-container--table .main-tables-container--contend span{
+    color:  #757575;
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+
+
+
 
