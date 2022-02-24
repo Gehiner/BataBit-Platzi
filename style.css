@@ -46,7 +46,7 @@ header img{
     align-self: center;    
 }
 
-.header__title-container{
+.header--title-container{
     width: 90%;
     min-width: 288px;
     max-width: 900px;
@@ -56,21 +56,21 @@ header img{
     align-self: center;
 }
 
-.header__title-container h1{
+.header--title-container h1{
     font-size: 2.4rem;
     font-weight: bold;
     line-height: 2.6rem;
     color:var(--just-white)
 }
 
-.header__title-container p{
+.header--title-container p{
     margin-top: 25px;
     font-size: 1.4rem;
     font-weight: 500px;
     line-height: 1.8rem;
     color: var(--soft-orange);
 }
-.header__title-container .header__button{
+.header--title-container .header--button{
     position: absolute;
     left: calc(50% - 118px);
     top: 270px;
@@ -89,7 +89,7 @@ header img{
     text-decoration: none;
     color: var(--black);
 }
-.header__button span{
+.header--button span{
     display: inline-block;
     width: 13px;
     height: 8px;
@@ -108,6 +108,7 @@ main{
     padding-top: 80px;
     padding-bottom: 30px;
     text-align: center;
+    background-color: var(--off-white);
 }
  .main-exchange-container--title{
      width: 90%;
@@ -144,29 +145,38 @@ main{
 }
 .main-tables-container{
     width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.main-tables-container .main-currency-table{
+    width: 70%;
+    min-width: 235px;
+    max-width: 500px;
+    height: 360px;
 }
 .main-tables-container .main-tables-container--table{
     display: grid;
-    grid-template-columns: 105px 105px;
+    grid-template-columns: repeat(2, minmax(100px,150px));
     place-content: center;
     align-content: center;
     align-items: center;
-    margin: 0 auto;
     gap: 1px;
     font-family: 'Inter', sans-serif;
 }
-
-.main-tables-container .main-tables-container--table div{
+.main-tables-container .main-currency-table .main-tables-container--table div{
     display: flex;
     background-color: var(--just-white);
     justify-content: start;
     height: 40px;
     align-items: center;
-    padding: 0 20px;
+    padding: 10px 12px;
 }
 
-.main-tables-container .main-tables-container--table .main-tables-container--contend{
-    justify-content: space-between;
+main .main-tables-container  .main-currency-table .main-tables-container--table .main-tables-container--contend{
+    justify-content: space-evenly;
+    width: 100%;
+    letter-spacing: -0.02em;
 }
 
 .main-tables-container .main-tables-container--table div span{
@@ -178,7 +188,9 @@ main{
     color:  #757575;
     font-size: 1.4rem;
     font-weight: 300;
+
 }
+
 
 
 
